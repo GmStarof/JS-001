@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olá, Mundo!</title>
 </head><style>
-    body{
-        background-color: rgb(255, 0, 0);
+    body{/* Aqui é uma pequena parte de css para deixar o html mais bonito*/
+        background-color: rgb(255, 0, 0); 
     color: rgb(252, 252, 252);
     font: normal 20pt Arial;}
     h1{
@@ -19,11 +19,12 @@
     }
 </style>
 <body>
-    <h1>O texto a seguir ira revelar a verdade suprema!</h1>
+    <h1>O texto a seguir ira revelar a verdade suprema!</h1> <!--Aqui é o corpo do nosso html, feito para textos e etc.-->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laudantium fugiat doloribus quia, velit dolores ipsam ex! Nostrum veritatis repudiandae voluptate tempore earum, libero blanditiis dolores fugiat excepturi labore est.</p>
-    <p>Você não olhou para trás e agora eu comi o cu de quem está lendo!</p>
+    <p>Você não olhou para trás e agora eu comi o cu de quem está lendo!</p><!--Aqui é um pequeno parágrafo sinalizado como 'P'-->
     <script>
-    window.prompt('Qual o seu nome?')//Pequeno prompt para interagir com o usuario
+    var nome = window.prompt('Qual o seu nome?')//Pequeno prompt para interagir com o usuario
+    window.alert('É um grande prazer te conhecer, '+ nome + '!')//Sinal de mais é utilizado para concatenação
     </script>
 </body>
 </html>

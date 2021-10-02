@@ -4,12 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando numeros</title>
+    <title>Calculando numeros</title>
+    <style>
+        body{
+            background: rgb(255, 251, 251);
+            color: rgb(0, 0, 0);
+            font: 30px normal Arial; }
+        div{
+            color: brown;
+            font: normal 20px Arial;
+
+        }    
+    </style>
 </head>
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1">
+    <h1>Calculando os  valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> ?
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="Soma()">
+    <input type="button"  value="Somar" onclick="Soma()"> 
+    <input type="button"  value="subtrair"  onclick="Sub()">
+    <input type="button" value="Divisão"   onclick="Div()">
+    <input type="button" value="Multiplicação" onclick="Multi()">
+    <div id="res">Resultado:</div>
+
+    <script>
+     function Soma() {
+         var tn1 = window.document.getElementById('txtn1')
+         var tn2 = window.document.getElementById('txtn2')
+         var res = window.document.getElementById('res')
+         var n1 = Number(tn1.value)
+         var n2 = Number(tn2.value)
+         var s = n1 + n2
+         res.innerText = `A Soma de ${n1} e ${n2} é de ${s}!`
+     }
+    function Sub() {
+         var tn3 = window.document.getElementById('txtn1')
+         var tn4 = window.document.getElementById('txtn2')
+         var res = window.document.getElementById('res')
+         var n1 = Number(tn3.value)
+         var n2 = Number(tn4.value)
+         var s = n1 - n2
+         res.innerText = `A Subtração de ${n1} e ${n2} é de ${s}!`
+    }
+    function Div() {
+        var tn1 = window.document.getElementById('txtn1')
+         var tn2 = window.document.getElementById('txtn2')
+         var res = window.document.getElementById('res')
+         var n1 = Number(tn1.value)
+         var n2 = Number(tn2.value)
+         var s = n1 / n2
+         res.innerText = `A Divisão de ${n1} e ${n2} é de ${s}!` 
+        }
+    function Multi() {
+        var tn1 = window.document.getElementById('txtn1')
+         var tn2 = window.document.getElementById('txtn2')
+         var res = window.document.getElementById('res')
+         var n1 = Number(tn1.value)
+         var n2 = Number(tn2.value)
+         var s = n1 * n2
+         res.innerText = `A multiplicação de ${n1} e ${n2} é de ${s}!` 
+    }
+    </script>
 </body>
 </html>

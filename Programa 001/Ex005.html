@@ -6,11 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
+        div#area{ 
+            background: rgb(3, 243, 3);
+            color: rgb(0, 135, 253);
+            height: 200px;
+            width: 200px;
+            font: normal 20px arial;
+            line-height: 200px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <p>Olá, sejam bem vindos!</p>
     <h1>Hmm coquinha.</h1>
-    <div id= area> interaja...</div>
+    <div id= "area" onclick = "clicar()"> interaja...</div>
+
+
 </body>
+<script>
+function clicar() {
+    var a = window.document.getElementById('area')
+    a.innerText 'Parabéns por interagir!'
+    
+}
+</script>
 </html>

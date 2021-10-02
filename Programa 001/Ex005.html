@@ -9,17 +9,17 @@
         div#area{ 
             background: rgb(3, 243, 3);
             color: rgb(0, 135, 253);
-            height: 200px;
-            width: 200px;
-            font: normal 20px arial;
-            line-height: 200px;
+            height: 600px;
+            width: 600px;
+            font: normal 40px arial;
+            line-height: 600px;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <h1>
-        Olá, clique ali em baixo e veja o que acontece
+        Olá, interaja ali em baixo e veja o que acontece
     </h1>
     <div id= "area" onclick = "clicar()" onmouseenter ="Entrou()" onmouseleave ="Saiu()" > interaja...</div>
 
@@ -29,14 +29,21 @@
     var a = window.document.getElementById('area')
 function clicar() {
     
-    a.innerText = 'Clicou!'}
+    a.innerText = 'Clicou!'
+    a.style.background = 'Red'
+    a.style.color = 'Black'
+}
 function Entrou() {
 
     a.innerText = 'Mouse em dentro do quadrado'
+    a.style.background = 'Blue'
+    a.style.color = 'Red'
 }
 function Saiu() {
     
     a.innerText = 'Mouse saiu do quadrado'
+    a.style.background = 'rgb(3, 243, 3)'
+    a.style.color = 'Yellow'
 }
 </script>
 </html>

@@ -1,6 +1,6 @@
 var agora = new Date()
 var diasem = agora.getDay()
-console.log(`Hoje é ${diasem}`)
+console.log(`Hoje é`)
 switch(diasem){
     case 0 :
         console.log('Domingo')
@@ -20,4 +20,6 @@ switch(diasem){
     case 6 :
         console.log('sabado')
         break
+    default :
+    console.log('Erro 404 Não encontrado.')
 }

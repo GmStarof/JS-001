@@ -7,7 +7,23 @@
     <title>Nacionalidade</title>
 </head>
 <body>
-    <h1>Verificação de Nacionalidade</h1>
-    País de nascimente: <input type="button"
+    <h1>Verificação de Nacionalidade Brasileira</h1>
+    País de nascimento: <input type="text" name="textN" id="textN">
+    <input type="button" value="Verificar" onclick="Verificar">
+    <div id = "res" ></div>
+        <script>
+function Verificar() {
+    var text1 = window.document.getElementById('textN')
+    var res = window.document.getElementById('res')
+    res.innerHTML = `Seu país de nascença é ${text1} `
+    if( res == Brasil){
+        res.innerHTML = `<p> Você é brasileiro <p> `
+    }
+    else() {
+        res.innerHTML = '<p> Você é estrangeiro!'
+    }
+
+}
+        </script>
 </body>
 </html>

@@ -5,7 +5,7 @@ var data = new Date()
 var hora = data.getHours()
 msg.innerHTML = `Agora são ${hora} horas.`
 if( hora >= 0 && hora < 12){
-    console.log('BOM DIA!')
+    //BOM DIA!
     img.scr = 'Manhã.png'
     document.body.style.background= '#f2caac'
 }

@@ -48,7 +48,7 @@ else{
         img.setAttribute('src','foto-mulher adulta.png')
     }
         else if( idade >50){
-        gênero = 'Idosa'
+      gênero = 'Idosa'
         img.setAttribute('src','foto-mulher idosa.png')
     }
 }

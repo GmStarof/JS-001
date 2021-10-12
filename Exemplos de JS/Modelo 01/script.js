@@ -10,8 +10,8 @@ if( hora >= 0 && hora < 12){
     img.scr = 'Manhã.png'
     document.body.style.background= '#f2caac'
 }
-else if(hora >= 12 && hora <= 18){
-    //BOA TARDE!
+else if(hora >= 12 && hora <= 18){ 
+    
     img.src = 'Tarde.png'
     document.body.style.background= '#e46600'
 }

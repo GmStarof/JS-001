@@ -3,7 +3,8 @@ var msg = window.document.getElementById('msg')
 var img = window.document.getElementById('fotodia')
 var data = new Date()
 var hora = data.getHours()
-msg.innerHTML = `Agora são ${hora} horas.`
+var min = data.getMinutes()
+msg.innerHTML = `Agora são ${hora} horas e ${min} minutos.`
 if( hora >= 0 && hora < 12){
     //BOM DIA!
     img.scr = 'Manhã.png'

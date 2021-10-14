@@ -1,5 +1,6 @@
 var c = 1
-while(c <= 10){
+do{
     console.log(`Ordem numeral ${c}`)
     c++
 }
+while( c <= 10)

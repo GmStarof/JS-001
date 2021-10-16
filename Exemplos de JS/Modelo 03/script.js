@@ -4,9 +4,14 @@ var i = window.document.getElementById('inum')
 var f = window.document.getElementById('fnum')
 var p = window.document.getElementById('pnum')
 var res = window.document.getElementById('res')
-while( i <= f){
-   p * i++
-    
+
+if(i.value.length == 0 || f.value.length == 0 || p.value.length  == 0){
+   window.alert('[ERRO] Faltam dados')
+}else{
+   res.innerHTML('Contando:')
+   for(var c = i; c <= f; c += p){
+   res.innerHTML += ` ${C} `
+}
 }
 
 }

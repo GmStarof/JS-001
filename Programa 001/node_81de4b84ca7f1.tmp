@@ -5,4 +5,4 @@ do{
     console.log(`Ordem numeral ${r}`)
     
 }
-while( c * s++ <= 20)
+while( c * s <= 20)

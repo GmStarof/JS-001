@@ -9,6 +9,9 @@ if(i.value.length == 0 || f.value.length == 0 || p.value.length  == 0){
    window.alert('[ERRO] Faltam dados')
 }else{
    res.innerHTML = 'Contando:'
+   for(var c= i; c <= f; c+ = p){
+      res.innerHTML += ´${c}
+   }
    
   
 }

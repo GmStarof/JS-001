@@ -12,9 +12,22 @@ if(inu.value.length == 0 || fnu.value.length == 0 || pnu.value.length  == 0){
    var i = Number(inu.value)
    var f = Number(fnu.value)
    var p = Number(pnu.value)
+   if(p == 0){
+      window.alert('Impossivel contar. Alterando para Passos: 1')
+      var p = 1
+   }
+   if( i < f){
+      //contegem crescente
       for(var c= i; c <= f; c += p){
-      res.innerHTML += ` ${c} `
+      res.innerHTML += `👉 ${c} `
       }
-   
+   }else{
+      //contegem descrecente
+      for(var c = i; c >= f; c -= p){
+         res.innerHTML += `👉 ${c} `
+      }
+   }
+   res.innerHTML += '🏁'
+
    }
 }

@@ -13,7 +13,7 @@ if(inu.value.length == 0 || fnu.value.length == 0 || pnu.value.length  == 0){
    var f = Number(fnu.value)
    var p = Number(pnu.value)
       for(var c= i; c <= f; c += p){
-      res.innerHTML += `${c} `
+      res.innerHTML += ` ${c} `
       }
    
    }

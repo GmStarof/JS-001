@@ -1,6 +1,7 @@
 var c = 1
+var s = 2
 do{
     console.log(`Ordem numeral ${c}`)
-    c++
+    s + c++
 }
-while( c <= 10)
+while( c <= 20)

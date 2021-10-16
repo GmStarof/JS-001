@@ -6,7 +6,7 @@ var hora = data.getHours()
 var min = data.getMinutes()
 msg.innerHTML = `Agora são ${hora} horas e ${min} minutos.`
 if( hora >= 0 && hora < 12){
-    //BOM DIA!
+   msg.innerHTML = 'Bom dia!'
     img.scr = 'Manhã.png'
     document.body.style.background= '#f2caac'
 }

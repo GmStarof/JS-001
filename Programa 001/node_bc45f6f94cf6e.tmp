@@ -3,6 +3,6 @@ num.length
 num[3] = 4
 num.push(5)
 console.log(num)
-for(c = 1; c + num; c++){
+for(var c = 1; c + num; c++){
     console.log(c)
 }
